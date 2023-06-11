@@ -1,0 +1,108 @@
+.App {
+    text-align: center;
+}
+.AppHeader {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.colorTexto{
+    background-color: black;
+    color: white;
+}
+.containerContent{
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.header {
+    background-color: #202125;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+}
+.navMenu {
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+}
+.navMenuItem {
+    font-size: 12px;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.navMenulink{
+    padding: 8px 12px;
+    border-radius: 10px;
+    
+}
+  
+.navMenuLink:hover{
+    background-color: rgba(146, 143, 143, 0.37);
+    transition: 0.5s;
+}
+.top {
+    background-color: #282c34;
+    height: 500px;
+    width: 100%;
+    top: 60px;
+    left: 0;
+}
+  
+.info {
+    font-size: 50px;
+    margin: 0 10px;
+    line-height: 200px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.info2 {
+    text-align: center;
+    display: flex;
+    margin-right: 20px;
+    font-size: 20px;
+    margin: 0 250px;
+    line-height: 30px;
+    text-transform: uppercase;
+    
+}
+.cardslayout{
+    display: flex;
+    justify-content: space-around;
+    /*align-items:center;*/
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+

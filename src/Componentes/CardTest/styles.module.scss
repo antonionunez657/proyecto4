@@ -1,0 +1,32 @@
+.containerCardTest{
+    background-color: red;
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+   
+}
+
+.contentCardTest{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.headerCard{
+    width: 100%;
+    background-color: green;
+    color: aliceblue;
+}
+.cardBody{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.cardBody2{
+    width: 100%;
+    background-color: white;
+    color: b;
+}
