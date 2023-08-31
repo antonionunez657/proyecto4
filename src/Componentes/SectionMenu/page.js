@@ -28,17 +28,21 @@ const Page =() => {
 
   const users = [
     {
-        titulo: "Titulo", 
-        descripcion: "Descripcion",
+        titulo: "Desarrollo Web", 
+        descripcion: "Desarrollamos páginas web únicas...",
         icono: "Icono1"},
     {
-        titulo: "Titulo2", 
-        descripcion: "Descripcion2",
+        titulo: "Aplicaciones Moviles", 
+        descripcion: "Creamos aplicaciones móviles....",
         icono: "Icono2"},
     {
-        titulo: "Titulo3", 
-        descripcion: "Descripcion3",
+        titulo: "Software a Medida", 
+        descripcion: "Creamos Software personalizado...",
         icono: "Icono3"},
+    {
+        titulo: "Bases de Datos", 
+        descripcion: "Optimizamos y diseñamos base de datos...",
+        icono: "Icono4"},
     ]
 
   return (
@@ -79,7 +83,7 @@ const Page =() => {
                 </header>
  
                 <body>
-                    <a>Servicios Prueba de Cards</a>
+                    <a>SERVICIOS</a>
                     <div className={styles.cardslayout}>
                         {users.map(user =>  (<CardTest titulo = {user.titulo} descripcion = {user.descripcion} icono={user.icono} ></CardTest>))}
                     </div>
@@ -87,42 +91,77 @@ const Page =() => {
                 </body>
 
                 <body>
-                <a>Nuestra Filosofia</a>
-
+                    <a>Nuestra Filosofia</a>
+                    <div className={styles.areaLista}>
+                    
+                        <ul>
+                            <li class="m-1">Alto Sentido de prioridad y responsabilidad ante las necesidades de nuestros clientes.</li>
+                            <li class="m-1">Trabajo en equipo, es prioritario en el desarrollo de nuestro trabajo</li>
+                            <li class="m-1">Buscamos distinguirnos por el desarrollo de sistemas con interface grafica visualmente amigablemente por el usuario final, asi como componentes minimalistas </li>
+                            <li class="m-1">Relaciones a largo plazo con nuestros clientes.</li>
+                        </ul>
+                    </div>
                 </body>
 
                 <body>
-                    <p>FORMULARIO</p>
+                    <h3>Contactanos</h3>
                     <>
                         <form onSubmit={(e)=>subir(e)}>
                             <div>
-                                <label>
-                                    Nombre:  
-                                    <input type="text" name="name" placeholder="Introduce tu nombre" value={name} onChange={(e)=>setName(e.target.value)}/>
-                                </label>
+                                <input type="text" name="name" placeholder="Correo Electronico" value={name} onChange={(e)=>setName(e.target.value)}/>
                             </div>
                             <div>
-                                <label>
-                                    Categoria: 
-                                    <input type="text" name="category" placeholder="Introduce la categoria" value={category} onChange={(e)=>setCategory(e.target.value)}/>
-                                </label>
+                            <textarea type="text" name="category" id="mensaje" cols="30" rows="10" placeholder="Mensaje" value={category} onChange={(e)=>setCategory(e.target.value)}></textarea>
                             </div>
-                            <div>
-                                <label>
-                                    Precio: 
-                                    <input type="text" name="price" placeholder="Introduce el precio" value={price} onChange={(e)=>setPrice(e.target.value)}/>
-                                </label>
-                            </div>  
-                            <div>  
-                                <label>
-                                    imgURL: 
-                                    <input type="text" name="imgURL" placeholder="Introduce imgURL" value={imgURL} onChange={(e)=>setImgURL(e.target.value)}/>
-                                </label>
-                            </div>    
-                            
-                            <input type="submit" value="Submit" />
+                            <input type="submit" value="Enviar" />
                         </form>
                     </>
+                </body>
+
+                <body>
+                    <div className={styles.areaSocial}>
+                        <div>
+                            <h2>Informacion de contacto</h2>
+                            <div>
+                                <div className={styles.containerSocialSection}>
+                                    <p>Imagen</p>
+                                    <div className={styles.socialDescription}>
+                                        <p>Facebook</p>
+                                        <p>www.facebook.com/sts</p>
+                                    </div>
+                                </div>
+                                <div className={styles.containerSocialSection}>
+                                    <p>Imagen</p>
+                                    <div className={styles.socialDescription}>
+                                        <p>Whatsapp</p>
+                                        <p>(222) 222 2222</p>
+                                    </div>
+                                </div>
+                                <div className={styles.containerSocialSection}>
+                                    <p>Imagen</p>
+                                    <div className={styles.socialDescription}>
+                                        <p>Correo</p>
+                                        <p>sts.puebla@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+
+                <body>
+                    <div className={styles.Home_sectionFooter__QRMOy}>
+                        <div className={styles.styles_sectionFooterContainer__m3E8W}>
+                            <div className={styles.styles_sectionFooterContent__ShF7k}>
+                                <div>
+                                    <p>Todos los derechos reservados 2023</p>
+                                    <p>Politicas de Privacidad</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </body>
  
             </div>
@@ -135,3 +174,5 @@ const Page =() => {
   )
 }
 export default Page;
+
+//<input type="text" name="category" placeholder="mensaje" cols="30" rows="10" value={category} onChange={(e)=>setCategory(e.target.value)}/>

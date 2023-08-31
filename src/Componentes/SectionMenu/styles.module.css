@@ -106,3 +106,57 @@
     margin-left: 1rem;
 }
 
+.areaLista {
+    grid-area: arealista;
+    padding: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center
+}
+
+
+
+.areaSocial {
+    grid-column: 2/3;
+    background-color: #00529b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerSocialSection {
+    display: grid;
+    grid-template-areas:
+        "socialicon socialdescription"
+        "socialicon socialdescription";
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 1rem;
+}
+.socialDescription{
+    grid-area: socialdescription;
+}
+
+.Home_sectionFooter__QRMOy {
+    height: 10vh;
+    width: 100%;
+    background: #0023ff;
+    background: linear-gradient(220deg,#0023ff 79%,#00a8ff 94%);
+}
+.styles_sectionFooterContainer__m3E8W {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+.styles_sectionFooterContent__ShF7k {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+}
